@@ -4,7 +4,9 @@
 <!--VFW 1304-->
 <!--Project 1-->
 
+<!-- Start of HTML -->
 <html>
+	<!-- Head group with meta data -->
 	<head>
 		<meta charset = "utf-8"/>
 		<meta name = "description" content = "Build a list of your EverQuest 2 Characters!"/>
@@ -17,14 +19,17 @@
 		<header>
 			<h1>Character List</h1>
 		</header>
+		<!-- Form data -->
 		<form action="" method="post">
 			<section>
+				<!-- Character fieldset -->
 				<fieldset>
 					<legend>Character</legend>
 					<ul>
 						<li><label for="cName">Character Name:</label><input type="text" id="cName"/></li>
 						<li><label for="account">Account:</label><input type="account" id="account"/></li>
 						<li>
+							<!-- Option group to select server -->
 							<label for="server">Server</label>
 							<select id="server">
 								<optgroup label="PvE Servers">
@@ -65,6 +70,7 @@
 						<li><label for="guild">Guild:</label><input type="text" id="guild"/></li>
 						<li><label for="creation">Creation Date:</label><input type="date" id="creation"/></li>
 						<li>
+							<!-- Option group to select class -->
 							<label for="class">Class</label>
 							<select id="class">
 								<optgroup label="Fighter">
@@ -107,17 +113,21 @@
 				</fieldset>
 			</section>
 			<section>
+				<!-- Character Data fieldset -->
 				<fieldset>
 					<legend>Character Data</legend>
 					<ul>
+						<!-- Radio buttons to choose character sex. -->
 						<li>Sex:
 							<ul>
 								<li><input type="radio" checked value="Male" id="male" name="sex" /><label for="male">Male</label></li>
 								<li><input type="radio" value="Female" id="female" name="sex" /><label for="female">Female</label></li>
 							</ul>
 						</li>
+						<!-- Range inputs for level and alternate advancement points. -->
 						<li><label for="level">Level</label><input type="range" min="1" max="95" name="level" type="level"/></li>
 						<li><label for="aa">AA's</label><input type="range" min="1" max="320" name="aa" type="aa"/></li>
+						<!-- Checkboxes to select milestones completed on character -->
 						<li>Milestone Quests Completed:
 							<ul>
 								<li><input type="checkbox" checked value="Enervated" id="enervated"/><label for="enervated">Enervated</label></li>
@@ -125,17 +135,20 @@
 								<li><input type="checkbox" value="Skyshrine" id="skyshrine" /><label for="skyshrine">Skyshrine Access</label></li>
 							</ul>
 						</li>
+						<!-- Text area to input character biography. -->
 						<li><label for="bio">Bio:</label><textarea id="bio"></textarea></li>
 					</ul>
 				</fieldset>
 			</section>
 			<section>
+				<!-- Button to submit character data -->
 				<input type="submit" value="Add Character" />
 				<input type="hidden" value="True" />
 			</section>
 		</form>
 		<footer>
 			<nav>
+				<!-- Links to clear data and display data -->
 				<small><a href="#">Clear Stored Data</a>&nbsp &nbsp<a href="#">Display Data</a></small>
 			</nav>
 		</footer>
