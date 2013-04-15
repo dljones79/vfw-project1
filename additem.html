@@ -14,6 +14,7 @@
 		<meta name = "robots" content = "index, follow"/>
 		<meta name = "viewport" content = "user-scalable=no, width=device-width"/>
 		<title>EverQuest 2 Character Database</title>
+		<link rel="stylesheet" href="css/styles.css" />
 	</head>
 	<body>
 		<header>
@@ -21,13 +22,13 @@
 		</header>
 		<!-- Form data -->
 		<form action="" method="post">
-			<section>
+			<div>
 				<!-- Character fieldset -->
 				<fieldset>
 					<legend>Character</legend>
 					<ul>
-						<li><label for="cName">Character Name:</label><input type="text" id="cName"/></li>
-						<li><label for="account">Account:</label><input type="account" id="account"/></li>
+						<li><label for="cName">Character Name:</label><input type="text" id="cName" /></li>
+						<li><label for="account">Account:</label><input type="text" id="account"/></li>
 						<li>
 							<!-- Option group to select server -->
 							<label for="server">Server</label>
@@ -111,8 +112,8 @@
 	
 					</ul>
 				</fieldset>
-			</section>
-			<section>
+			</div>
+			<div>
 				<!-- Character Data fieldset -->
 				<fieldset>
 					<legend>Character Data</legend>
@@ -139,12 +140,12 @@
 						<li><label for="bio">Bio:</label><textarea id="bio"></textarea></li>
 					</ul>
 				</fieldset>
-			</section>
-			<section>
+			</div>
+			<div>
 				<!-- Button to submit character data -->
 				<input type="submit" value="Add Character" />
 				<input type="hidden" value="True" />
-			</section>
+			</div>
 		</form>
 		<footer>
 			<nav>
